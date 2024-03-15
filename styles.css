@@ -1,0 +1,88 @@
+.message {
+    font-size:20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+svg {
+    background-color: white;
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+.rect{
+    fill: black;
+    transition: 0.5s ease-in-out
+}
+
+.bar:hover {
+    fill: white;
+    /* transition: 0.5s ease-out */
+}
+
+.visHolder {
+    position: absolute;
+    /* top: 6em; */
+}
+
+#tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Change this from absolute to fixed */
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    font: 12px;
+    background: lightsteelblue;
+    box-shadow: 1px 1px 10px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    background: #fff;
+    pointer-events: none;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    margin: 30px auto;
+    font-size: 0.8em;
+}
